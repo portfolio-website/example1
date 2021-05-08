@@ -52,7 +52,7 @@ button:active,
 button:hover,
 a b.light-color:hover {
   text-decoration: none;
-  color:  #c41526;
+  color: #c41526;
 }
 
 b {
@@ -97,7 +97,6 @@ b.max-bold {
 .p-r {
   position: relative;
 }
-
 
 .color-d {
   color: #f5f5f5;
@@ -502,7 +501,6 @@ b.max-bold {
   border-radius: 0.3rem;
 }
 
-
 /*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
@@ -528,7 +526,10 @@ b.max-bold {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+#mainNav .navbar-brand.active,
+#mainNav .navbar-brand:active,
+#mainNav .navbar-brand:focus,
+#mainNav .navbar-brand:hover {
   color: #c41526;
 }
 
@@ -540,7 +541,7 @@ b.max-bold {
   color: #000000;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active{
+#mainNav .navbar-nav .nav-item .nav-link.active {
   color: #c41526 !important;
   font-size: 100%;
   font-weight: 500;
@@ -571,14 +572,13 @@ b.max-bold {
     padding-bottom: 0;
     background-color: #ffffff;
     color: #000000;
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 25px 0;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Intro Section
@@ -707,35 +707,75 @@ b.max-bold {
   background-color: #c41526;
 }
 
+/* ---------------------------------
+8. EDUCATION SECTION
+--------------------------------- */
+
+.education-wrapper {
+  position: relative;
+}
+
+.education-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: -51px;
+  width: 2px;
+  background: #ccc;
+}
+
+.education-wrapper .education {
+  position: relative;
+}
+
+.education-wrapper .education:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -58px;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 0 0 8px rgba(255, 0, 43, 0.137);
+  background: #c41526;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .service-11 {
   font-family: "Montserrat", sans-serif;
-	color: #8d97ad;
+  color: #8d97ad;
   font-weight: 300;
 }
 
-.service-11 h1, .service-11 h2, .service-11 h3, .service-11 h4, .service-11 h5, .service-11 h6 {
+.service-11 h1,
+.service-11 h2,
+.service-11 h3,
+.service-11 h4,
+.service-11 h5,
+.service-11 h6 {
   color: #3e4555;
 }
 
 .service-11 .font-weight-medium {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .service-11 .bg-light {
-    background-color: #f4f8fa !important;
+  background-color: #f4f8fa !important;
 }
 
 .service-11 .subtitle {
-    color: #8d97ad;
-    line-height: 24px;
+  color: #8d97ad;
+  line-height: 24px;
 }
 
 .service-11 .card.card-shadow {
-    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
 }
 
 .service-11 .wrap-service11-box {
@@ -752,39 +792,69 @@ b.max-bold {
 }
 
 .service-11 .bg-success-gradiant {
-    background: #c41526;
-    background: -webkit-linear-gradient(legacy-direction(to right), #c41526 0%, #479af6 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#c41526), to(#479af6));
-    background: -webkit-linear-gradient(left, #c41526 0%, #479af6 100%);
-    background: -o-linear-gradient(left, #c41526 0%, #479af6 100%);
+  background: #c41526;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    #c41526 0%,
+    #479af6 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#c41526),
+    to(#479af6)
+  );
+  background: -webkit-linear-gradient(left, #c41526 0%, #479af6 100%);
+  background: -o-linear-gradient(left, #c41526 0%, #479af6 100%);
 }
 
 .service-11 .icon-round {
-		width: 80px;
-    line-height: 80px;
+  width: 80px;
+  line-height: 80px;
 }
 
 .service-11 .btn-success-gradiant {
-		background: #c41526;
-    background: -webkit-linear-gradient(legacy-direction(to right), #c41526 0%, #479af6 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#c41526), to(#479af6));
-    background: -webkit-linear-gradient(left, #c41526 0%, #479af6 100%);
-    background: -o-linear-gradient(left, #c41526 0%, #479af6 100%);
-    background: linear-gradient(to right, #c41526 0%, #479af6 100%);
+  background: #c41526;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    #c41526 0%,
+    #479af6 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#c41526),
+    to(#479af6)
+  );
+  background: -webkit-linear-gradient(left, #c41526 0%, #479af6 100%);
+  background: -o-linear-gradient(left, #c41526 0%, #479af6 100%);
+  background: linear-gradient(to right, #c41526 0%, #479af6 100%);
 }
 
 .service-11 .btn-success-gradiant:hover {
-		background: #479af6;
-    background: -webkit-linear-gradient(legacy-direction(to right), #479af6 0%, #c41526 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#479af6), to(#c41526));
-    background: -webkit-linear-gradient(left, #479af6 0%, #c41526 100%);
-    background: -o-linear-gradient(left, #479af6 0%, #c41526 100%);
-    background: linear-gradient(to right, #479af6 0%, #c41526 100%);	
+  background: #479af6;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    #479af6 0%,
+    #c41526 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#479af6),
+    to(#c41526)
+  );
+  background: -webkit-linear-gradient(left, #479af6 0%, #c41526 100%);
+  background: -o-linear-gradient(left, #479af6 0%, #c41526 100%);
+  background: linear-gradient(to right, #479af6 0%, #c41526 100%);
 }
 
 .service-11 .btn-md {
-    padding: 15px 45px;
-    font-size: 16px;
+  padding: 15px 45px;
+  font-size: 16px;
 }
 
 /*--------------------------------------------------------------
@@ -937,7 +1007,6 @@ b.max-bold {
   background: #ffa804;
 }
 
-
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1047,7 +1116,6 @@ b.max-bold {
     transform: rotate(360deg);
   }
 }
-
 
 /*------/ Sidebar /------*/
 .widget-sidebar .sidebar-title {
